@@ -6,7 +6,7 @@ export default function Chart() {
       <div className="chart-bar">
         <span className="bar"></span>
       </div>
-      <div className="month">Jan</div>
+      <p className="month">Jan</p>
     </div>
   );
 }

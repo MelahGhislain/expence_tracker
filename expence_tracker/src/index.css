@@ -46,7 +46,7 @@ body {
   display: flex;
   align-items: center
 }
-.board .filter-container .span{
+.board .filter-container .span, .board  .expencse-contianer .span{
   flex: 1;
 }
 .board .filter-container .year-container{
@@ -59,8 +59,32 @@ body {
  padding: 0 15px;
 }
 .board .chart-container{
-  background-color:rgb(255, 195, 255);
+  background-color:rgb(252, 224, 252);
   border-radius: 5px;
   margin: 10px 0;
   padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.board .chart-container .chart-bar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.board .chart-container .chart-bar .bar{
+  background-color: rgb(187, 166, 187);
+  width: 10px;
+  height: 100px;
+  border-radius: 5px;
+}
+.board .month{
+  color: #000;
+}
+.board  .expencse-contianer{
+  background-color: rgb(136, 135, 135);
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  align-items: center
 }
