@@ -18,6 +18,8 @@ export default function Board() {
 
       <ChartContainer />
       <ExpenceItem />
+      <ExpenceItem />
+      <ExpenceItem />
     </div>
   );
 }

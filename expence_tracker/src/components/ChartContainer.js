@@ -7,6 +7,15 @@ export default function ChartContainer() {
             <Chart />
             <Chart />
             <Chart />
+            <Chart />
+            <Chart />
+            <Chart />
+            <Chart />
+            <Chart />
+            <Chart />
+            <Chart />
+            <Chart />
+            <Chart />
         </div>
     )
 }
