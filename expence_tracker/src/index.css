@@ -37,3 +37,30 @@ body {
   border-radius: 5px;
   display: inline-block;
 }
+.board{
+  background-color: rgb(53, 53, 53);
+  border-radius: 5px;
+  padding: 10px;
+}
+.board .filter-container{
+  display: flex;
+  align-items: center
+}
+.board .filter-container .span{
+  flex: 1;
+}
+.board .filter-container .year-container{
+  background-color: #fff;
+  color:#000;
+  border-radius: 5px;
+  padding: 10px;
+}
+.board .filter-container .year{
+ padding: 0 15px;
+}
+.board .chart-container{
+  background-color:rgb(255, 195, 255);
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 5px 0;
+}

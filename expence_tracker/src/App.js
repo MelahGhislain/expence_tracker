@@ -1,13 +1,14 @@
-import React from 'react';
-import Header from './components/Header'
+import React from "react";
+import Header from "./components/Header";
+import Board from "./components/Board";
 
-
-export default function App(){
+export default function App() {
   return (
     <div className="app">
       <div className="container">
-      <Header />
+        <Header />
+        <Board />
       </div>
     </div>
-  )
+  );
 }
