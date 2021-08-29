@@ -36,7 +36,45 @@ body {
   background-color: purple;
   border-radius: 5px;
   display: inline-block;
+  cursor: pointer;
 }
+.myForm .form-controls{
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+}
+.myForm .form-controls .form-control{
+  text-align: start;
+}
+.myForm .form-controls .form-control label{
+  color: #000;
+}
+.myForm .form-controls .form-control input{
+  display: block;
+  margin-top: 5px;
+  width: 100%;
+  padding:10px;
+  border-radius: 5px;
+  border: none;
+}
+.myForm .form-controls .form-control input:focus{
+  outline: none;
+}
+.myForm .btn{
+  margin-top: 8px;
+  text-align: right;
+}
+.myForm .btn button{
+  background-color: purple;
+  border-radius: 5px;
+  border: none;
+  padding: 15px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
 .board{
   background-color: rgb(53, 53, 53);
   border-radius: 5px;
