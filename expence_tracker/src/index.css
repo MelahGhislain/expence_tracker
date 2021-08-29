@@ -31,16 +31,17 @@ body {
   border-radius: 5px;
   margin: 30px 0;
 }
-.header-container .header{
+.header-container .btn{
   padding:10px 15px;
   background-color: purple;
   border-radius: 5px;
   display: inline-block;
+  border: none;
   cursor: pointer;
 }
 .myForm .form-controls{
   display: grid;
-  grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns:repeat(auto-fit, minmax(150px, 1fr));
   grid-gap: 10px;
 }
 .myForm .form-controls .form-control{

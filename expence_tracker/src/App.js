@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import Header from "./components/Header";
 import Board from "./components/Board";
 
@@ -23,13 +23,22 @@ const expenses = [
   },
 ];
 
-export default function App() {
-  return (
-    <div className="app">
-      <div className="container">
-        <Header />
-        <Board expenses={expenses} />
+export default class App extends Component {
+
+  getExpenseData = (expenseItem) =>{
+    console.log("From App")
+    console.log(expenseItem)
+    return expenseItem
+  }
+
+  render() {
+    return (
+      <div className="app">
+        <div className="container"> 
+          <Header getData={this.getExpenseData}/>
+          <Board expenses={expenses}  />
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }

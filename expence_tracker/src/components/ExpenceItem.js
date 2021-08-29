@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 
 export default class ExpenceItem extends Component {
-  constructor(props) {
-    super(props);
-  }
+  
 
   formatDate = (dict) => {
     return this.props.expense.date.toLocaleString("en-US", dict);
