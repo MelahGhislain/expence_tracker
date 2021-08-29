@@ -69,7 +69,7 @@ body {
   background-color: purple;
   border-radius: 5px;
   border: none;
-  padding: 15px;
+  padding: 5px;
   color: #fff;
   font-size: 17px;
   font-weight: 400;
@@ -94,8 +94,12 @@ body {
   border-radius: 5px;
   padding: 10px;
 }
-.board .filter-container .year{
- padding: 0 15px;
+.board .filter-container .year  select{
+ border:none;
+ background-color: #fff;
+}
+.board .filter-container .year  select:focus{
+  outline: none;
 }
 .board .chart-container{
   background-color:rgb(252, 224, 252);
