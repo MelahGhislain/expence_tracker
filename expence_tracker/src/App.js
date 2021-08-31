@@ -19,11 +19,12 @@ export default class App extends Component {
     };
   }
   getFilteredData = (expenseItems) => {
-    this.setState({ filteredExpenses: [...expenseItems] });
+    this.setState({ filteredExpenses: [...expenseItems]});
+   
   };
 
   getExpenseData = (expenseItem) => {
-    this.setState({ expenses: [expenseItem, ...this.state.expenses] });
+    this.setState({expenses: [expenseItem, ...this.state.expenses] });
   };
 
   render() {
@@ -33,7 +34,7 @@ export default class App extends Component {
           <Header getData={this.getExpenseData} />
           <Board
             expenses={
-              this.state.filteredExpenses !== []
+              this.state.filteredExpenses === []
                 ? this.state.filteredExpenses
                 : 
                 this.state.expenses

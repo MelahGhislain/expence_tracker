@@ -19,8 +19,7 @@ export default function Board(props) {
 
   // filter's the expense data by year
   function filterByYear(e) {
-    setYear(e.target.value);console.log(e.target.value)
-
+    setYear(e.target.value);
     const filteredData = props.expenses.filter(item => (parseInt(item.date.getFullYear()) === parseInt(e.target.value)))
     props.filteredData(filteredData);
   }
