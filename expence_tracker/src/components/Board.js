@@ -3,7 +3,7 @@ import ChartContainer from "./ChartContainer";
 import ExpenceItem from "./ExpenceItem";
 
 export default function Board(props) {
-  const [year, setYear] = useState("All");
+  const [year, setYear] = useState("2020");
 
   function getYear() {
     const getYears = props.expenses.map((item) => item.date.getFullYear());
@@ -17,11 +17,12 @@ export default function Board(props) {
     return years;
   }
 
-
+  // filter's the expense data by year
   function filterByYear(e) {
-    setYear(e.target.value);
+    setYear(e.target.value);console.log(e.target.value)
+
     const filteredData = props.expenses.filter(item => (parseInt(item.date.getFullYear()) === parseInt(e.target.value)))
-    props.getFilteredData(filteredData);
+    props.filteredData(filteredData);
   }
 
   return (
